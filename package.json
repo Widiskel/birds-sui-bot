@@ -1,0 +1,36 @@
+{
+  "name": "tsubasa-rivalz-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "tsubasa-rivalz-bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node start.js",
+    "setup": "node setup.js",
+    "dev": "node index.js",
+    "test": "node test.js",
+    "build": "rm -rf app && javascript-obfuscator --config build-config.json"
+  },
+  "bin": "index.js",
+  "keywords": [
+    "tsubasa-rivalz-bot"
+  ],
+  "author": "Widiskel",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Widiskel/tsubasa-rivalz-bot.git"
+  },
+  "dependencies": {
+    "@mysten/sui": "^1.13.0",
+    "https-proxy-agent": "^7.0.5",
+    "input": "^1.0.1",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "multispinner": "^0.2.1",
+    "node-fetch": "^3.3.2",
+    "telegram": "^2.22.2",
+    "twisters": "^1.1.0",
+    "winston": "^3.13.0"
+  }
+}
