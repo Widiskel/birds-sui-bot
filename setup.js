@@ -59,7 +59,7 @@ const copyOperations = [
 ];
 
 (async () => {
-  console.log(createAccountsDir());
+  await createAccountsDir();
   console.log(`Copying Template File`);
   for (let { src, dest } of copyOperations) {
     await copyFile(src, dest);
