@@ -22,6 +22,14 @@ async function copyFile(src, dest) {
     console.error(`Error copying file from ${src} to ${dest}:`, err);
   }
 }
+async function dirExists(dirPath) {
+  try {
+    await fs.promises.access(dirPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 async function createAccountsDir() {
   try {
