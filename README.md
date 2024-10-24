@@ -106,7 +106,7 @@ Anyway i create new telegram channel just for sharing bot or airdrop, join here
    ```
 2. Run
    ```
-   npm install && npm i telegram@2.22.2 && npm run setup
+   npm install && npm i telegram@2.22.2 && mkdir accounts && npm run setup 
    ```
 3. Configure Bot config (including APP ID & HASH if you want to use session)
    ```

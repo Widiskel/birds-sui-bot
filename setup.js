@@ -23,6 +23,22 @@ async function copyFile(src, dest) {
   }
 }
 
+async function createAccountsDir() {
+  try {
+    const dirPath = "accounts";
+    const exists = await dirExists(dirPath);
+    if (exists) {
+      console.log(`Accounts Dir already exists, skipping creation.`);
+      return;
+    }
+
+    await fs.promises.mkdir(dirPath, { recursive: true });
+    console.log(`Accounts Dir created`);
+  } catch (err) {
+    console.error(`Error creating accounts directory:`, err);
+  }
+}
+
 const copyOperations = [
   {
     src: path.join("config", "config_tmp.js"),
@@ -32,19 +48,14 @@ const copyOperations = [
     src: path.join("config", "proxy_list_tmp.js"),
     dest: path.join("config", "proxy_list.js"),
   },
-  {
-    src: path.join("accounts", "accounts_tmp.js"),
-    dest: path.join("accounts", "accounts.js"),
-  },
 ];
 
 (async () => {
+  console.log(createAccountsDir());
   console.log(`Copying Template File`);
   for (let { src, dest } of copyOperations) {
     await copyFile(src, dest);
   }
   console.log(`\nSetup Complete`);
-  console.log(
-    `Open and configure\n- accounts/accounts.js\n- config/config.js\n- config/proxy_list.js`
-  );
+  console.log(`Open and configure\n- config/config.js\n- config/proxy_list.js`);
 })();
