@@ -1,8 +1,8 @@
 {
-  "name": "tsubasa-rivalz-bot",
+  "name": "birds-sui-bot",
   "version": "1.0.0",
   "type": "module",
-  "description": "tsubasa-rivalz-bot",
+  "description": "birds-sui-bot",
   "main": "index.js",
   "scripts": {
     "start": "node start.js",
@@ -13,13 +13,13 @@
   },
   "bin": "index.js",
   "keywords": [
-    "tsubasa-rivalz-bot"
+    "birds-sui-bot"
   ],
   "author": "Widiskel",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Widiskel/tsubasa-rivalz-bot.git"
+    "url": "git+https://github.com/Widiskel/birds-sui-bot.git"
   },
   "dependencies": {
     "@mysten/sui": "^1.13.0",

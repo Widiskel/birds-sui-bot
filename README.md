@@ -90,7 +90,9 @@ Anyway i create new telegram channel just for sharing bot or airdrop, join here
 - Auto Mint Worm
 - Auto Egg Breaking Game
 - Auto Daily Check In Onchain (Required Some SUI on Your Wallet)
-- Auto Upgrade Bird Onchain (SOON WHEN MY EGG BECOMING A BIRD HEHE)
+- Auto Feed Before Prey
+- Auto Hunt / Prey
+- Auto Unlock Locked Worm
 
 ## Setup & Configure BOT
 
